@@ -8,6 +8,13 @@
     "packageId": "com.AnotherAxiom.GorillaTag",
     "packageVersion": "1.0.4",
     "type": "Cosmetic",
+    "dependencies": [
+        {
+            "id": "MonkeComputer",
+            "version": "^1.0.3",
+            "downloadIfMissing": "https://github.com/RedBrumbler/MonkeComputer/releases/download/1.0.3/MonkeComputer.qmod"
+        }
+    ],
     "modFiles": [
         "libmonkeskies.so"
     ],
