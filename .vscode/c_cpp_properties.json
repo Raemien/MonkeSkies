@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Quest",
+            "defines": [
+                "MOD_ID=\"MonkeSkies\"",
+                "VERSION=\"1.0.0\"",
+                "__GNUC__",
+                "__aarch64__"
+            ],
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/extern/libil2cpp/il2cpp/libil2cpp",
+                "d:/QuestModDev/References/android-ndk-r21d/**"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,19 @@
+{
+    "_QPVersion": "0.1.0",
+    "name": "Monke Skies",
+    "id": "MonkeSkies",
+    "author": "Raemien",
+    "description": "Import your own 360 images as custom sky textures!\nScans the 'MonkeSkies' ModData folder for imported images.",
+    "version": "1.0.0",
+    "packageId": "com.AnotherAxiom.GorillaTag",
+    "packageVersion": "1.0.4",
+    "type": "Cosmetic",
+    "modFiles": [
+        "libmonkeskies.so"
+    ],
+    "libraryFiles": [
+        "libbeatsaber-hook_1_2_4.so"
+    ],
+    "fileCopies": [
+    ]
+}

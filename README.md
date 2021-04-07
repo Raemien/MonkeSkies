@@ -1,0 +1,14 @@
+# Monke Skies
+Ported from Beat Saber, this mod allows you to import any 360 image as a sky texture.
+
+Images are stored in the 'ModData\com.AnotherAxiom.GorillaTag\Mods\MonkeSkies' directory.
+## 360 Images
+
+Although any image will load, this mod is designed for use with 360 images. For things to look correct, make sure you're using a 360 photo sphere with a fairly high resolution (at least 4k).
+
+If you're looking to snap your own 360 photos, the Street View app allows you to export images which can be used natively by this mod.
+
+## Credits
+
+* [Raemien](https://github.com/raemien) - The original [CustomBackgrounds](https://github.com/Raemien/CustomBackgroundsQuest) mod for Beat Saber.
+* [zoller27osu](https://github.com/zoller27osu), [Sc2ad](https://github.com/Sc2ad) and [jakibaki](https://github.com/jakibaki) - [beatsaber-hook](https://github.com/sc2ad/beatsaber-hook)
