@@ -47,10 +47,9 @@ namespace MonkeSkies
             }
         }
 
-        int maxnum = (bgVector.size() - 3);
         GorillaUI::UISelectionHandler* selection = (GorillaUI::UISelectionHandler*)listHandler;
         selection->min = 0;
-        selection->max = std::clamp(maxnum, 0, maxnum);
+        selection->max = bgVector.size();
         selection->selectionCallback = SelectImage;
         for (size_t i = 0; i < bgVector.size(); i++)
         {
