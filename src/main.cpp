@@ -1,5 +1,6 @@
 #include "UI/BackgroundListViewController.hpp"
 #include "BGConfig.hpp"
+#include "typedefs.h"
 
 #include "modloader/shared/modloader.hpp"
 #include "beatsaber-hook/shared/utils/logging.hpp"
@@ -7,7 +8,7 @@
 #include "beatsaber-hook/shared/utils/typedefs.h"
 #include "beatsaber-hook/shared/config/config-utils.hpp"
 
-#include "monkecomputer/shared/typedefs.h"
+#include "monkecomputer/shared/GorillaUI.hpp"
 #include "monkecomputer/shared/Register.hpp"
 #include "custom-types/shared/register.hpp"
 
@@ -121,16 +122,16 @@ MAKE_HOOK_OFFSETLESS(PlayerController_Awake, void)
 extern "C" void setup(ModInfo& info) {
 
     info.id = "MonkeSkies";
-    info.version = "1.0.0";
+    info.version = "1.0.2";
     modInfo = info;
     bgDirectoryPath = getDataDir(info);
     getConfig().Load();
 }
 
 extern "C" void load() {
-    Modloader::requireMod("MonkeComputer", "1.0.3");
     if (!LoadConfig()) SetupConfig();
     il2cpp_functions::Init();
+    GorillaUI::Init();
     INSTALL_HOOK_OFFSETLESS(getLogger(), PlayerController_Awake, il2cpp_utils::FindMethodUnsafe("GorillaLocomotion", "Player", "Awake", 0));
     custom_types::Register::RegisterType<MonkeSkies::BackgroundListViewController>();
     GorillaUI::Register::RegisterSettingsView<MonkeSkies::BackgroundListViewController*>(modInfo);

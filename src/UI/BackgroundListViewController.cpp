@@ -8,7 +8,7 @@
 #include <dirent.h>
 #include <list>
 
-DEFINE_CLASS(MonkeSkies::BackgroundListViewController);
+DEFINE_TYPE(MonkeSkies::BackgroundListViewController);
 
 using namespace GorillaUI;
 

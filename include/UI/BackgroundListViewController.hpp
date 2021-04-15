@@ -15,7 +15,7 @@ DECLARE_CLASS_CODEGEN(MonkeSkies, BackgroundListViewController, GorillaUI::Compo
 
     DECLARE_INSTANCE_FIELD(void*, listHandler);
 
-    REGISTER_FUNCTION(BackgroundListViewController,
+    REGISTER_FUNCTION(
         REGISTER_METHOD(DidActivate);
         REGISTER_METHOD(OnKeyPressed);
         REGISTER_METHOD(Awake);
