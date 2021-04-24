@@ -122,7 +122,7 @@ MAKE_HOOK_OFFSETLESS(PlayerController_Awake, void)
 extern "C" void setup(ModInfo& info) {
 
     info.id = "MonkeSkies";
-    info.version = "1.0.2";
+    info.version = "1.0.3";
     modInfo = info;
     bgDirectoryPath = getDataDir(info);
     getConfig().Load();
@@ -131,8 +131,5 @@ extern "C" void setup(ModInfo& info) {
 extern "C" void load() {
     if (!LoadConfig()) SetupConfig();
     il2cpp_functions::Init();
-    GorillaUI::Init();
     INSTALL_HOOK_OFFSETLESS(getLogger(), PlayerController_Awake, il2cpp_utils::FindMethodUnsafe("GorillaLocomotion", "Player", "Awake", 0));
-    custom_types::Register::RegisterType<MonkeSkies::BackgroundListViewController>();
-    GorillaUI::Register::RegisterSettingsView<MonkeSkies::BackgroundListViewController*>(modInfo);
 }
