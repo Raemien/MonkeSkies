@@ -2,6 +2,7 @@
 Ported from Beat Saber, this mod allows you to import any 360 image as a sky texture.
 
 Images are stored in the 'ModData\com.AnotherAxiom.GorillaTag\Mods\MonkeSkies' directory.
+
 To install a 360 image, drag and drop it into QuestPatcher.
 ## 360 Images
 
