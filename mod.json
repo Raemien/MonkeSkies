@@ -4,7 +4,7 @@
     "id": "MonkeSkies",
     "author": "Raemien",
     "description": "Import your own 360 images as custom sky textures!\nScans the 'MonkeSkies' ModData folder for imported images.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "packageId": "com.AnotherAxiom.GorillaTag",
     "packageVersion": "1.0.5",
     "type": "Cosmetic",
