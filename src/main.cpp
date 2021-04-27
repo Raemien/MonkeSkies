@@ -131,5 +131,6 @@ extern "C" void setup(ModInfo& info) {
 extern "C" void load() {
     if (!LoadConfig()) SetupConfig();
     il2cpp_functions::Init();
+    GorillaUI::Init();
     INSTALL_HOOK_OFFSETLESS(getLogger(), PlayerController_Awake, il2cpp_utils::FindMethodUnsafe("GorillaLocomotion", "Player", "Awake", 0));
 }
