@@ -48,13 +48,13 @@ LOCAL_MODULE := zip
 LOCAL_EXPORT_C_INCLUDES := extern/zip
 LOCAL_SRC_FILES := extern/libzip.so
 include $(PREBUILT_SHARED_LIBRARY)
-# Creating prebuilt for dependency: monkecodegen - version: 0.2.4
+# Creating prebuilt for dependency: monkecodegen - version: 0.3.0
 include $(CLEAR_VARS)
-LOCAL_MODULE := monkecodegen_0_2_4
+LOCAL_MODULE := monkecodegen_0_3_0
 LOCAL_EXPORT_C_INCLUDES := extern/monkecodegen
-LOCAL_SRC_FILES := extern/libmonkecodegen_0_2_4.so
+LOCAL_SRC_FILES := extern/libmonkecodegen_0_3_0.so
 include $(PREBUILT_SHARED_LIBRARY)
-# Creating prebuilt for dependency: monkecomputer - version: 1.3.2
+# Creating prebuilt for dependency: monkecomputer - version: 1.3.4
 include $(CLEAR_VARS)
 LOCAL_MODULE := monkecomputer
 LOCAL_EXPORT_C_INCLUDES := extern/monkecomputer
@@ -74,7 +74,7 @@ LOCAL_SHARED_LIBRARIES += beatsaber-hook_1_3_3
 LOCAL_SHARED_LIBRARIES += custom-types
 LOCAL_SHARED_LIBRARIES += quest-cosmetic-loader_0_1_3
 LOCAL_SHARED_LIBRARIES += zip
-LOCAL_SHARED_LIBRARIES += monkecodegen_0_2_4
+LOCAL_SHARED_LIBRARIES += monkecodegen_0_3_0
 LOCAL_SHARED_LIBRARIES += monkecomputer
 LOCAL_LDLIBS += -llog
 LOCAL_CFLAGS += -I'./extern/libil2cpp/il2cpp/libil2cpp' -I'./shared' -I'./extern' -I'extern/monkecodegen/include'
