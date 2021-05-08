@@ -6,6 +6,7 @@
 #include "monkecomputer/shared/EKeyboardKey.hpp"
 
 #include <dirent.h>
+#include <regex>
 #include <list>
 
 DEFINE_TYPE(MonkeSkies::BackgroundListViewController);
@@ -41,11 +42,12 @@ namespace MonkeSkies
         {
             std::string filename = fileent->d_name;
             for (char &ch : filename) ch = tolower(ch);
-            if (filename.ends_with(".png") || filename.ends_with(".jpg") || filename.ends_with(".jpeg"))
+            if (std::regex_search(filename, std::regex(".png|.jpg|.jpeg")))
             {
                 bgVector.push_back(fileent->d_name);
             }
         }
+        (void)closedir(imgdir);
 
         GorillaUI::UISelectionHandler* selection = (GorillaUI::UISelectionHandler*)listHandler;
         selection->min = 0;
