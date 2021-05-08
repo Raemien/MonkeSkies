@@ -6,9 +6,9 @@ Images are stored in the 'ModData\com.AnotherAxiom.GorillaTag\Mods\MonkeSkies' d
 To install a 360 image, drag and drop it into QuestPatcher.
 ## 360 Images
 
-Although any image will load, this mod is designed for use with 360 images. For things to look correct, make sure you're using a 360 photo sphere with a fairly high resolution (at least 4k).
+This mod is designed for use with 360 images. For things to look correct, make sure you're using a 360 photo sphere with a fairly high resolution (at least 4k, preferably 8k).
 
-If you're looking to snap your own 360 photos, the Street View app allows you to export images which can be used natively by this mod.
+If you're looking to snap your own 360 photos, the Street View app allows you to export images which can be used natively by this mod. Alternatively, programs such as Blender allow you to render your own 360 images using external tools.
 
 ## Credits
 
